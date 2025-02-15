@@ -1,0 +1,68 @@
+/* Floating Navigation */
+.floating-nav {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000;
+}
+
+/* Navigation Buttons */
+.nav-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    background: #333;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.nav-btn i {
+    font-size: 1.5rem;
+}
+
+/* Expand Button on Hover */
+.nav-btn:hover {
+    width: 150px;
+    background: #4fa49a;
+    padding-left: 15px;
+}
+
+.nav-btn span {
+    display: none;
+    font-size: 1rem;
+}
+
+.nav-btn:hover span {
+    display: inline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .floating-nav {
+        left: 10px;
+    }
+
+    .nav-btn {
+        width: 40px;
+        font-size: 1rem;
+    }
+
+    .nav-btn i {
+        font-size: 1.2rem;
+    }
+
+    .nav-btn:hover {
+        width: 120px;
+    }
+}

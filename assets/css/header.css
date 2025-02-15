@@ -1,0 +1,20 @@
+/* styles.css */
+
+#typing-text {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #ff6b6b; /* Highlight color */
+    font-family: monospace;
+}
+
+#cursor {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #ff6b6b;
+    font-family: monospace;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
